@@ -3,8 +3,13 @@
 
 // 1. printIndices
 function printIndices(items) {
-  // Replace this with your code
+
+	for (const i in items) {
+		console.log(`${items[i]} ${i}`);
+	;}
+
 }
+printIndices(['apple', 'berry', 'cherry'])
 
 
 // 2. everyOtherItem
