@@ -23,10 +23,17 @@ function everyOtherItem(items) {
 	}
 	return result;
 }
-console.log(everyOtherItem(['apple', 'berry', 'cherry']))
+//console.log(everyOtherItem(['apple', 'berry', 'cherry']))
 
 
 // 3. smallestNItems
 function smallestNItems(items, n) {
-  // Replace this with your code
+
+	const sortedItems = items.sort((a, b) => a - b);
+	const sortedNItems = sortedItems.slice(0, n);
+
+	sortedNItems.reverse();
+
+	return sortedNItems;
 }
+// console.log(smallestNItems([1, 30, 4, 21, 1000], 3))
